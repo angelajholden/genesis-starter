@@ -47,10 +47,10 @@ function genesis_sample_css() {
 		.genesis-nav-menu .current-menu-item > a,
 		.genesis-nav-menu .sub-menu .current-menu-item > a:focus,
 		.genesis-nav-menu .sub-menu .current-menu-item > a:hover,
-		.menu-toggle:focus,
-		.menu-toggle:hover,
-		.sub-menu-toggle:focus,
-		.sub-menu-toggle:hover {
+		.:focus,
+		.:hover,
+		.sub-:focus,
+		.sub-:hover {
 			color: %s;
 		}
 
@@ -129,7 +129,7 @@ function genesis_sample_css() {
 	$css .= ( has_custom_logo() && ( 600 <= $logo_max_width ) ) ?
 		'
 		.wp-custom-logo .title-area,
-		.wp-custom-logo .menu-toggle,
+		.wp-custom-logo .,
 		.wp-custom-logo .nav-primary {
 			float: none;
 		}
